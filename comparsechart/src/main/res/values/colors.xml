@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bad">#fb4747</color>
+    <color name="good">#009900</color>
+</resources>
