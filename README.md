@@ -36,3 +36,6 @@ limitations under the License.
 ```
 CompareIndicator1.updateView(10,90);
 ```
+
+
+![alt](https://github.com/AllenCoder/AndroidCustomView/blob/master/gif/device-2016-08-15-180942.png)

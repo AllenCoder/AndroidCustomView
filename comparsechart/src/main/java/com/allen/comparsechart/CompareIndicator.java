@@ -25,13 +25,10 @@ public class CompareIndicator extends View {
     private Paint mApprovePaint;
     private int mOppostiteCount = 0;
     private int mApproveCount = 0;
-    private float mApproveLineWidth;
-    private float mOppositeLineWidth;
     private float marginLeft_16dp;
     private float marginTop_12dp;
     private float Start_down_cx;
     private float Start_down_cy;
-    private float width;
 
     public int getOppostiteCount() {
         return mOppostiteCount;
@@ -127,22 +124,24 @@ public class CompareIndicator extends View {
         super.onDraw(canvas);
         float end_down_cy = Start_down_cy;
         float end_up_cx = getWidth() - marginLeft_16dp - mApproveBitmap.getWidth() - DisplayUtils.dip2px(context, 8);
-        width = end_up_cx - Start_down_cx - DisplayUtils.dp2px(context, 8);
+        float width = end_up_cx - Start_down_cx - DisplayUtils.dp2px(context, 8);
+        float approveLineWidth;
+        float oppositeLineWidth;
         if (mOppostiteCount != 0 && mApproveCount != 0) {
-            mApproveLineWidth = width / (mOppostiteCount + mApproveCount) * mApproveCount;
-            mOppositeLineWidth = width / (mOppostiteCount + mApproveCount) * mOppostiteCount;
+            approveLineWidth = width / (mOppostiteCount + mApproveCount) * mApproveCount;
+            oppositeLineWidth = width / (mOppostiteCount + mApproveCount) * mOppostiteCount;
         } else if (mOppostiteCount == 0 && mApproveCount != 0) {
-            mOppositeLineWidth = DisplayUtils.dp2px(context, 1);
-            mApproveLineWidth = width - mOppositeLineWidth;
+            oppositeLineWidth = DisplayUtils.dp2px(context, 1);
+            approveLineWidth = width - oppositeLineWidth;
 
         } else if (mOppostiteCount != 0 && mApproveCount == 0) {
-            mApproveLineWidth = DisplayUtils.dp2px(context, 1);
-            mOppositeLineWidth = width - mApproveLineWidth;
+            approveLineWidth = DisplayUtils.dp2px(context, 1);
+            oppositeLineWidth = width - approveLineWidth;
         } else {
-            mOppositeLineWidth = width / 2;
-            mApproveLineWidth = width / 2;
+            oppositeLineWidth = width / 2;
+            approveLineWidth = width / 2;
         }
-        float end_down_cx = Start_down_cx + mOppositeLineWidth;
+        float end_down_cx = Start_down_cx + oppositeLineWidth;
         /**
          * 画 第二个圆弧
          */
