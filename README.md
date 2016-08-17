@@ -1,5 +1,5 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AndroidCustomView-green.svg?style=true)](https://android-arsenal.com/details/1/4166)
-
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AndroidCustomView-green.svg?style=true)](https://android-arsenal.com/details/1/4166) 
+[ ![Download](https://api.bintray.com/packages/allencoder/maven/compareindicator/images/download.svg) ](https://bintray.com/allencoder/maven/compareindicator/_latestVersion)
 # 简介(投票 ,排名对比图)
 ------------------------
 
