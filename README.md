@@ -1,12 +1,14 @@
 
 
 #简介(投票 ,排名对比图)
-1. 一个简单的自定义 View 可高度定制
-2. 支持设置替换 支持 ,和反对的图标
-3. 支持自定义线宽和支持反对线的字体颜色
+------------------------
+
+1.  一个简单的自定义 View 可高度定制
+2.  支持设置替换 支持 ,和反对的图标
+3.  支持自定义线宽和支持反对线的字体颜色
 
 #设置比分值
-
+**效果图**
 
 <img src="https://github.com/AllenCoder/AndroidCustomView/blob/master/gif/device-2016-08-15-180942.png" width=300 />
 
@@ -61,6 +63,7 @@ CompareIndicator1.updateView(10,90);
 
 <img src="https://github.com/AllenCoder/AndroidDevCoder/blob/master/gif/linechart.gif" width=300 />
 
+###[ Apk 下载地址](http://fir.im/5kvu)
 
 ##License
 ```
