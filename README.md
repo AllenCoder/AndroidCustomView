@@ -13,7 +13,7 @@
 # 设置比分值
 **效果图**
 
-<img src="https://github.com/AllenCoder/AndroidCustomView/blob/master/gif/device-2016-08-15-180942.png" width=300 />
+<img src="https://github.com/AllenCoder/AndroidCustomView/blob/master/gif/device-2016-09-08-213022.png" width=300 />
 
 | 字段    | 属性   |   
 | ----------------- | ---------- | 
