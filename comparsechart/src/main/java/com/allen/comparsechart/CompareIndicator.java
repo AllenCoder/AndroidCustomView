@@ -29,6 +29,64 @@ public class CompareIndicator extends View {
     private float marginTop_12dp;
     private float Start_down_cx;
     private float Start_down_cy;
+    private int approveLineColor;
+    private int oppositeLineColor;
+
+    public Bitmap getOppositeBitmap() {
+        return mOppositeBitmap;
+    }
+
+    public void setOppositeBitmap(Bitmap oppositeBitmap) {
+        mOppositeBitmap = oppositeBitmap;
+    }
+
+    public Bitmap getApproveBitmap() {
+        return mApproveBitmap;
+    }
+
+    public void setApproveBitmap(Bitmap approveBitmap) {
+        mApproveBitmap = approveBitmap;
+    }
+
+    public Paint getOppositePaint() {
+        return mOppositePaint;
+    }
+
+    public void setOppositePaint(Paint oppositePaint) {
+        mOppositePaint = oppositePaint;
+    }
+
+    public Paint getApprovePaint() {
+        return mApprovePaint;
+    }
+
+    public void setApprovePaint(Paint approvePaint) {
+        mApprovePaint = approvePaint;
+    }
+
+    public float getStart_down_cx() {
+        return Start_down_cx;
+    }
+
+    public void setStart_down_cx(float start_down_cx) {
+        Start_down_cx = start_down_cx;
+    }
+
+    public float getStart_down_cy() {
+        return Start_down_cy;
+    }
+
+    public void setStart_down_cy(float start_down_cy) {
+        Start_down_cy = start_down_cy;
+    }
+
+    public Paint getBitmapPaint() {
+        return BitmapPaint;
+    }
+
+    public void setBitmapPaint(Paint bitmapPaint) {
+        BitmapPaint = bitmapPaint;
+    }
 
     public int getOppostiteCount() {
         return mOppostiteCount;
@@ -78,8 +136,8 @@ public class CompareIndicator extends View {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.compareindicator);
         int approveIconId = typedArray.getResourceId(R.styleable.compareindicator_approve_res, R.mipmap.good);
         int oppositeIconId = typedArray.getResourceId(R.styleable.compareindicator_opposite_res, R.mipmap.bad);
-        int approveLineColor = typedArray.getColor(R.styleable.compareindicator_approve_line_color, getResources().getColor(R.color.good));
-        int oppositeLineColor = typedArray.getColor(R.styleable.compareindicator_oppose_line_color, getResources().getColor(R.color.bad));
+         approveLineColor = typedArray.getColor(R.styleable.compareindicator_approve_line_color, getResources().getColor(R.color.good));
+         oppositeLineColor = typedArray.getColor(R.styleable.compareindicator_oppose_line_color, getResources().getColor(R.color.bad));
         float lineWidthDimen = typedArray.getDimension(R.styleable.compareindicator_lineWidth, 5f);
         typedArray.recycle();
         mOppositeBitmap = BitmapFactory.decodeResource(getResources(), approveIconId);

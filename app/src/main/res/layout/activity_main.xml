@@ -10,7 +10,7 @@
 
 
     <com.allen.comparsechart.CompareIndicator
-        android:id="@+id/CompareIndicator2"
+        android:id="@+id/CompareIndicator1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -19,7 +19,7 @@
         />
 
     <com.allen.comparsechart.CompareIndicator
-        android:id="@+id/CompareIndicator3"
+        android:id="@+id/CompareIndicator2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -28,6 +28,13 @@
         app:oppose_line_color="@android:color/holo_red_dark"
         app:opposite_res="@mipmap/opposite"
         />
-
+    <com.allen.comparsechart.CompareIndicator
+        android:id="@+id/CompareIndicator3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:approve_res="@mipmap/approve_x"
+        app:opposite_res="@mipmap/disapprove"
+        />
 
 </LinearLayout>

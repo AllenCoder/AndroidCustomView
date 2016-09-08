@@ -5,6 +5,9 @@
 
 1.  一个简单的自定义 View 可高度定制
 2.  支持设置替换 支持 ,和反对的图标
+
+
+
 3.  支持自定义线宽和支持反对线的字体颜色
 
 # 设置比分值
@@ -12,7 +15,12 @@
 
 <img src="https://github.com/AllenCoder/AndroidCustomView/blob/master/gif/device-2016-08-15-180942.png" width=300 />
 
-
+| 字段    | 属性   |   
+| ----------------- | ---------- | 
+| OppositeBitmap    | 反对图标   | |
+| mApproveBitmap    | 支持图标   |    
+| approveLineColor  | 支持线颜色 |    
+| oppositeLineColor |    反对线颜色    |    
 ## Dependency
 
 
@@ -24,7 +32,7 @@ Add dependency in your app module
 
 ```
 dependencies {
-	compile 'com.allen.comparsechart:comparsechart:1.0.0'
+	compile 'com.allen.comparsechart:comparsechart:1.0.1'
 }
 ```
 
@@ -36,7 +44,7 @@ dependencies {
 <dependency>
   <groupId>com.allen.comparsechart</groupId>
   <artifactId>comparsechart</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
